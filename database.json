@@ -1,0 +1,29 @@
+{
+    "owners": [
+        {
+            "name": "John Doe",
+            "pets": [1, 2]
+        },
+        {
+            "name": "Jose Coelho",
+            "pets": [3]
+        }
+    ],
+    "pets": [
+        {
+            "name": "toby",
+            "species": "dog",
+            "age": 2
+        },
+        {
+            "name": "stella",
+            "species": "cat",
+            "age": 6
+        },
+        {
+            "name": "garry",
+            "species": "parrot",
+            "age": 3
+        }
+    ]
+}
