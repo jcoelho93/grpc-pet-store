@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+message Pet {
+    string name = 1;
+    string species = 2;
+    int32 age = 3;
+}
+
+message Owner {
+    string name = 1;
+    repeated string pets = 2;
+}
+
+message Id {
+    int32 id = 1;
+}
+
+message Void {}
+
+service PetStore {
+    rpc GetPets(Void) returns (stream Pet) {}
+    rpc GetOwners(Void) returns (stream Owner) {}
+    rpc GetOwnedPets(Owner) returns (stream Pet) {}
+    rpc GetOwner(Id) returns (Owner) {}
+}
